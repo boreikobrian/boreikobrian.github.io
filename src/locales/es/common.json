@@ -1,6 +1,6 @@
 {
-  "title": "Desarrollador Web Frontend - Felix Rangel",
-  "description": "Desarrollador Web Frontend de Estelí, Nicaragua. Especialista en HTML5, CSS5, JavaScript ES6+, Node.js y WordPress.",
+  "title": "Cloud Architec & DevOps Engineer - Brian Boreiko",
+  "description": "Cloud Architec & DevOps Engineer de Buenos Aires, Argentina. Especialista en AWS, GCP, Huawei Cloud, Docker y Kubernetes.",
   "navbar": [
     {
       "label": "Inicio",
@@ -20,26 +20,26 @@
     }
   ],
   "hero": {
-    "job_availability": "¡Disponible para trabajar!",
-    "title": "¡Hola soy Felix Rangel!",
-    "job_title": "<strong>Desarrollador Web Frontend</strong> de Estelí, Nicaragua.",
-    "description": "Especialista en HTML5, CSS5, JavaScript ES6+, Node.js y WordPress.",
+    "job_availability": "Abierto a nuevas oportunidades",
+    "title": "¡Hola soy Brian Boreiko!",
+    "job_title": "<strong>Cloud Architec & DevOps Engineer</strong> de Buenos Aires, Argentina.",
+    "description": "Especialista en AWS, GCP, Huawei Cloud, Docker y Kubernetes.",
     "cta": "Contactame"
   },
   "experience": {
     "title": "Experiencia laboral",
     "jobs": {
-      "jobs_title": ["Freelance", "HD Media Nicaragua"],
+      "jobs_title": ["HiperPBX", "Blewald"],
       "jobs_description": [
         {
-          "title": "Desarrollador Web Frontend",
-          "time": ["Dic 2021"],
+          "title": "Especialista en preproducción y QA",
+          "time": ["Julio 2021"],
           "description": "Creo sitios web con diseños modernos y aplicando buenas prácticas de UI/UX. También me encargo de rediseñar, optimizar el posicionamiento SEO, aumentar las medidas de seguridad y optimizar el rendimiento de velocidad de sitios web, para aumentar la taza de conversión y las visitas.",
           "list": ["Diseño de sitios web", "Optimización de sitios web"]
         },
         {
-          "title": "Desarrollador Web en WordPress",
-          "time": ["Nov 2020", "Oct 2021"],
+          "title": "SysAdmin",
+          "time": ["jun 2018", "jul 2021"],
           "description": "Me encargué de desarrollar sitios web en WordPress para clientes de Nicaragua, durante mi tiempo en la agencia aporté mi conocimiento en seguridad web aumentando las medidas y disminuyendo las brechas de seguridad en WordPress, configurando plugins y estableciendo cabeceras HTTP como Content-Security-Policy (CSP), Cross-Origin-Resource-Policy (CORP), Cross-Origin-Opener-Policy (COOP), etc.",
           "list": ["Diseño de sitios web", "Optimización de sitios web"]
         }
@@ -50,31 +50,31 @@
     "title": "Proyectos",
     "projects": [
       {
-        "title": "Estelí Buses",
-        "description": "La primer plataforma para conocer los horarios de las terminales de autobuses interlocales del municipio de Estelí, Nicaragua.",
+        "title": "I-66 Express Lanes",
+        "description": "Proyecto de integración de sistema telefónico con el CRM de Microsoft, para la empresa de peajes de la ruta interestatal N°66 en Virginia, Estados Unidos",
         "image": "/src/images/projects/esteli-buses-project.jpg",
-        "techs": ["Astro", "TailwindCSS", "Firebase", "PWA"],
+        "techs": ["Microsoft Dynamics", "Asterisk", "API REST", "Gantt"],
         "code": "Código",
         "preview": "Vista previa"
       },
       {
-        "title": "Portafolio UX Ana Rangel",
-        "description": "Lorem ipsum dolor sit amet consectetur. Faucibus quis sociis at sagittis egestas sed volutpat. Arcu pellentesque elit volutpat quam. Id dictum sagittis hendrerit diam viverra velit. Blandit id viverra quis lectus faucibus egestas ipsum turpis.",
+        "title": "Ministerio de ambiente",
+        "description": "Proyecto de migración de telefonia analógíca a IP del Ministerio de Medioambiente de Argentina. Se llevo a cabo junto a la encargada de la direccion de sistemas informaticos, Sandra Luciana Vittoriano. El proyecto tuvo una duración de 2 meses y conllevo la implementación, configuración y capacitación de todos los empleados.",
         "image": "/src/images/projects/ana-rangel-portafolio.jpg",
-        "techs": ["Astro", "CSS", "SASS", "Open Props", "TypeScript"],
+        "techs": ["Asterisk", "Zoho Projects", "GDMS", "TFTP", "SNGREP"],
         "code": "Código",
         "preview": "Vista previa"
       },
       {
-        "title": "Calculadora Payoneer Nicaragua",
-        "description": "Descubre una herramienta esencial para freelancers y negocios en Nicaragua. Nuestra Calculadora Payoneer Nicaragua te permite calcular de manera precisa y rápida las tarifas y comisiones al recibir pagos internacionales a través de Payoneer. ¡Empieza a usarla hoy y toma el control de tus finanzas!",
+        "title": "PedidosYa!",
+        "description": "Llevé adelante la PoC para la migración del sistema de atención de agentes de PedidosYa!, junto al IT Manager del cliente, Matías Julio. Se tenia como objetivo replicar el sistema actual y proyectar las mejoras necesarias y requeridas por el cliente. Tambien organizar y documentar la migración en caliente del sistema actual, al nuevo.",
         "image": "/src/images/projects/calculadora-payoneer-project.jpg",
         "techs": [
-          "Astro",
-          "TailwindCSS",
-          "React",
-          "TypeScript",
-          "PWA",
+          "Asterisk",
+          "Huawei Cloud",
+          "Bitrix24",
+          "HiperMe!",
+          "Linux",
           "Firebase"
         ],
         "code": "Código",
@@ -119,12 +119,12 @@
   },
   "about": {
     "title": "Sobre mí",
-    "subtitle": "Soy mod de Midudev y ManzDev pero más feliz me siento siendo mod de AnaRangel",
-    "description": "Soy un Desarrollador Web Frontend y WordPress con más de 3 años de experiencia, especializado en crear diseños modernos y optimizar el rendimiento web, con un enfoque en tecnologías como HTML 5, CSS 3, JavaScript ES6+ y WordPress. Manejo frameworks como React y Astro, y soy experto en constructores visuales de WordPress, además de tener un fuerte conocimiento técnico en Core Web Vitals, lo que me convierte en un profesional apasionado y altamente cualificado para cualquier proyecto de desarrollo web."
+    "subtitle": "Estudiante de Ingeniería en sistemas en la Universidad Técnica Nacional",
+    "description": "Soy un SRE con más de 2 años de experiencia, actualmente trabajando en HiperPBX, tengo un enfoque técnico en control de calidad y pruebas de software, garantizando la eficiencia y calidad de los servicios que ofrecemos. Manejo tecnologías como Selenium, Playwright y Grafana, y me especializo en la automatización de pruebas y la optimización de procesos de preproducción."
   },
   "contact": {
-    "title": "¿Listo para dar vida a tus ideas?",
-    "subtitle": "Puedo impulsar tu proyecto o formar parte de tu equipo"
+    "title": "¿Estas buscando nuevos integrantes?",
+    "subtitle": "Puedo formar parte de tu equipo"
   },
   "footer": {
     "designed": {

@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Cambia esto si usas una rama diferente para el desarrollo
+      - main  # Asegúrate de que este es el nombre de tu rama principal
 
 jobs:
   deploy:
@@ -15,17 +15,17 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '22'  # Cambia esto si necesitas una versión diferente
+          node-version: '22'  # O la versión que uses
 
       - name: Install dependencies
         run: npm install
 
       - name: Build with Astro
-        run: npm run build  # Este comando generará la carpeta dist
+        run: npm run build  # Esto generará la carpeta dist
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist  # Asegúrate de que esta ruta sea correcta
-          publish_branch: gh-pages
+          publish_dir: ./dist
+          publish_branch: gh-pages  # Esta es la rama donde se desplegarán los archivos

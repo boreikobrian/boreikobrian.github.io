@@ -1,10 +1,11 @@
 ---
 import { t } from 'i18n:astro'
 
-const { designed, developed } = t('footer', {
+const { designed, developed, implemented } = t('footer', {
   returnObjects: true
 })
 
+const { implemented_with: implementedWith, implemented_by: implementedBy } = implemented
 const { designed_with: designedWith, designed_by: designedBy } = designed
 const { developed_with: developedWith, developed_by: developedBy } = developed
 
@@ -12,7 +13,29 @@ const year = new Date().getFullYear()
 ---
 
 <footer>
+  <div class="footer-content">
+    <img src="/public/favicons/prueba3.png" alt="Logo" class="centered-image">
+    </div>
   <p>
+    <span>
+      © <span id="year">{year}</span>
+      {implementedWith}
+      <video
+        width="24"
+        src="/media/launch.webm"
+        preload="metadata"
+        playsinline
+        autoplay
+        muted
+        loop></video>
+      {implementedBy}
+      <a
+        href="https://www.linkedin.com/in/boreikobrian"
+        target="_blank"
+        rel="noopener noreferrer">Brian Boreiko</a
+      >
+      <br></br>
+    </span>
     <span>
       © <span id="year">{year}</span>
       {designedWith}
@@ -28,7 +51,7 @@ const year = new Date().getFullYear()
       <a
         href="https://www.linkedin.com/in/ux-ana-rangel"
         target="_blank"
-        rel="noopener noreferrer">UX Ana Rangel</a
+        rel="noopener noreferrer"> UX Corp Rangel Ana | </a
       >
     </span>
     <span>
@@ -43,7 +66,7 @@ const year = new Date().getFullYear()
         loop></video>
       {developedBy}
       <a
-        href="https://felixicaza.com/"
+        href="https://github.com/UXCorpRangel/portfolios-dev/tree/main"
         target="_blank"
         rel="noopener noreferrer">Felix Icaza</a
       >.

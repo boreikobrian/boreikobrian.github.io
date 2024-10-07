@@ -1,34 +1,26 @@
-name: Deploy Astro Project
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
       - main
 
+permissions:
+  contents: write  # Permiso para escribir en el contenido del repositorio
+
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout the repository
-        uses: actions/checkout@v3
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '18'
-
-      - name: Install dependencies
-        run: npm install
+      - name: Checkout code
+        uses: actions/checkout@v2
 
       - name: Build project
-        run: npm run build
+        run: npm run build  # Ajusta esto según tu proceso de construcción
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-
-      - name: Clean untracked files
-        run: git clean -fd
+          publish_branch: gh-pages

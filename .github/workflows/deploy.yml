@@ -3,32 +3,30 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Cambia esto si tu rama principal tiene otro nombre
-
-permissions:
-  contents: write  # Permiso para escribir en el contenido del repositorio
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2
         with:
-          node-version: '16'  # Cambia la versión de Node.js según tu necesidad
+          node-version: '18'  # O la versión que necesites
 
       - name: Install dependencies
-        run: npm install  # Asegúrate de que tu package.json tenga las dependencias necesarias
+        run: npm install
 
-      - name: Build project
-        run: npm run build  # Este es el comando que construye tu proyecto de Astro
+      - name: Build the project
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist  # Asegúrate de que ./dist sea la carpeta correcta
+          publish_dir: ./dist
           publish_branch: gh-pages

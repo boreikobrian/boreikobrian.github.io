@@ -52,6 +52,96 @@ html {
     color: #000;
     transition: var(--transition-bg), var(--transition-text);
   }
+
+  .huawei-cloud {
+    background-color: #507b9b;
+    color: #ffffff;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .bitrix24 {
+    background-color: #a64eb1;
+    color: #ffffff;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .linux {
+    background-color: #b14e71;
+    color: #ffffff;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .hiperme {
+    background-color: #508414;
+    color: #ffffff;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .docker {
+    background-color: #30510a;
+    color: #ffffff;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .prometheus {
+    background-color: #510a13;
+    color: #ffffff;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .k6 {
+    background-color: #b99fb9;
+    color: #ffffff;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .grafana {
+    background-color: #565536;
+    color: #ffffff;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .playwright {
+    background-color: #b06129;
+    color: #ffffff;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .asterisk {
+    background-color: #4c2c15;
+    color: #ffffff;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .api-rest {
+    background-color: #0f442c;
+    color: #ffffff;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .microsoft-dynamics {
+    background-color: #29306b;
+    color: #ffffff;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .gantt {
+    background-color: #311b42;
+    color: #ffffff;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .gdms {
+    background-color: #29536b;
+    color: #ffffff;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .zoho-projects {
+    background-color: #29673f;
+    color: #ffffff;
+    transition: var(--transition-bg), var(--transition-text);
+  }
 }
 
 html.dark {
@@ -92,5 +182,95 @@ html.dark {
 
   .firebase {
     background-color: #ffdd88;
+  }
+
+  .huawei-cloud {
+    background-color: #7eaed2;
+    color: #000000;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .bitrix24 {
+    background-color: #c071ca;
+    color: #000000;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .linux {
+    background-color: #b14e71;
+    color: #000000;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .hiperme {
+    background-color: #7fc92a;
+    color: #000000;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .docker {
+    background-color: #94a87d;
+    color: #000000;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .prometheus {
+    background-color: #510a13;
+    color: #ffffff;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .k6 {
+    background-color: #b99fb9;
+    color: #000000;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .grafana {
+    background-color: #a4a376;
+    color: #000000;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .playwright {
+    background-color: #db905c;
+    color: #000000;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .asterisk {
+    background-color: #a18068;
+    color: #000000;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .api-rest {
+    background-color: #578d75;
+    color: #000000;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .microsoft-dynamics {
+    background-color: #969ff3;
+    color: #000000;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .gantt {
+    background-color: #9553c8;
+    color: #000000;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .gdms {
+    background-color: #439ed3;
+    color: #000000;
+    transition: var(--transition-bg), var(--transition-text);
+  }
+
+  .zoho-projects {
+    background-color: #47c573;
+    color: #000000;
+    transition: var(--transition-bg), var(--transition-text);
   }
 }

@@ -1,9 +1,9 @@
 html {
-  --bg-color: #000;
+  --bg-color: #001326;
   --bg-secondary-color: #1e1e1e;
   --bg-toggle-thumb: #343434;
   --bg-card-contributions: #4847474d;
-  --bg-separator: #5a5a5a;
+  --bg-separator: #b9b4b4;
   --text-color: #fff;
   --text-description-color: #a6a6a6;
   --font: 'Inter Variable', sans-serif;
@@ -24,13 +24,13 @@ html {
 }
 
 html.dark {
-  --bg-color: #fff;
+  --bg-color: #FAFAFA;
   --bg-secondary-color: color-mix(in srgb, #1e1e1e, #fff 95%);
   --bg-toggle-thumb: #d5d5d5;
   --bg-card-contributions: #cbcbcb4d;
   --bg-separator: #000;
   --text-color: #000;
-  --text-description-color: color-mix(in srgb, #a6a6a6, #000 40%);
+  --text-description-color: color-mix(in srgb, #dad6d6, #000 40%);
   --border-color: #e6e6e6;
   --border-card-contributions-color: #e6e6e6;
 }

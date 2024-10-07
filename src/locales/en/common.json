@@ -81,7 +81,7 @@
           "Asterisk",
           "Huawei Cloud",
           "Bitrix24",
-          "HiperMe!",
+          "HiperMe",
           "Linux",
           "Firebase"
         ],
@@ -95,8 +95,8 @@
     "contributions": [
       {
         "src": "/src/images/contributions/hiperme.png",
-        "alt": "HiperMe!",
-        "title": "HiperMe!",
+        "alt": "HiperMe",
+        "title": "HiperMe",
         "description": "Together with the development team, I currently collaborate on the continuous improvement of the platform, proposing changes, testing them, and designing the application with good UX/UI practices.",
         "techs": ["HTML", "CSS", "JavaScript"],
         "repo": "#",
@@ -107,7 +107,7 @@
         "src": "/src/images/contributions/contactcenter.png",
         "alt": "Contact Center",
         "title": "Contact Center",
-        "description": "Unlike HiperMe!, I collaborate with a third-party development team in charge of the Contact Center for HiperPBX. Here, in addition to development suggestions, we add functionality tests manually and actively develop automated tests with Playwright. I also review test results and performance with Grafana and k6.",
+        "description": "Unlike HiperMe, I collaborate with a third-party development team in charge of the Contact Center for HiperPBX. Here, in addition to development suggestions, we add functionality tests manually and actively develop automated tests with Playwright. I also review test results and performance with Grafana and k6.",
         "techs": ["HTML", "CSS", "JavaScript", "Playwright", "Grafana", "k6", "Docker", "Prometheus"],
         "repo": "#",
         "repo_label": "Repository",

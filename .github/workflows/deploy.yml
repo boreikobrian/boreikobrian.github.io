@@ -16,13 +16,13 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '18'  # O la versión que necesites
+          node-version: '18'  # Ajusta esto según la versión que necesites
 
       - name: Install dependencies
         run: npm install
 
       - name: Build the project
-        run: npm run build
+        run: npm run build  # Este paso se encarga de construir el proyecto de Astro
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

@@ -9,24 +9,24 @@ const { implemented_with: implementedWith, implemented_by: implementedBy } = imp
 const { designed_with: designedWith, designed_by: designedBy } = designed
 const { developed_with: developedWith, developed_by: developedBy } = developed
 
+
 const year = new Date().getFullYear()
+
 ---
 
 <footer>
   <div class="footer-content">
-    <img src="/src/images/logo.png" alt="Logo" class="centered-image">
+    <img src="/src/images/B1.svg" alt="Logo" class="centered-image">
     </div>
   <p>
     <span>
       © <span id="year">{year}</span>
       {implementedWith}
-      {implementedBy}
-      <a
+        <a
         href="https://www.linkedin.com/in/boreikobrian"
         target="_blank"
-        rel="noopener noreferrer">Brian Boreiko</a
-      >
-      <video
+        rel="noopener noreferrer">Brian Boreiko</a>
+        <video
         width="24"
         src="/media/launch.webm"
         preload="metadata"
@@ -34,6 +34,19 @@ const year = new Date().getFullYear()
         autoplay
         muted
         loop></video>
+        <h> | Logo diseñado por </h>
+      <video
+        width="24"
+        src="/media/heart.webm"
+        preload="metadata"
+        playsinline
+        autoplay
+        muted
+        loop></video>
+      <a
+        href="https://instagram.com/eumelia_20"
+        target="_blank"
+        rel="noopener noreferrer">Eumelia Carusi Rojas</a>
       <br></br>
     </span>
     <span>
@@ -51,25 +64,8 @@ const year = new Date().getFullYear()
       <a
         href="https://www.linkedin.com/in/ux-ana-rangel"
         target="_blank"
-        rel="noopener noreferrer"> UX Corp Rangel Ana | </a
-      >
-    </span>
-    <span>
-      {developedWith}
-      <video
-        width="24"
-        src="/media/heart.webm"
-        preload="metadata"
-        playsinline
-        autoplay
-        muted
-        loop></video>
-      {developedBy}
-      <a
-        href="https://github.com/UXCorpRangel/portfolios-dev/tree/main"
-        target="_blank"
-        rel="noopener noreferrer">Felix Icaza</a
-      >.
+        rel="noopener noreferrer"> UX Corp Rangel Ana</a>
+        <h>|</h>
     </span>
   </p>
 </footer>
@@ -117,3 +113,4 @@ const year = new Date().getFullYear()
 <script is:inline>
   document.querySelector('#year').textContent = new Date().getFullYear()
 </script>
+

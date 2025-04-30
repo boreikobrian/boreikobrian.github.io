@@ -23,7 +23,7 @@ const defaultTranslations = {
     "nav.career": "Mi Camino",
 
     // Hero
-    "hero.greeting": "¡Hola soy Brian Boreiko!",
+    "hero.greeting": "¡Hola, soy Brian Boreiko!",
     "hero.title": "Arquitecto Cloud & Ingeniero DevOps | AWS, GCP, Docker, Kubernetes",
     "hero.cta.projects": "Ver Proyectos",
     "hero.cta.contact": "Contáctame",

@@ -18,6 +18,7 @@ export default function Navbar() {
   const navItems = [
     { name: useTranslation("nav.home"), href: "#home" },
     { name: useTranslation("nav.about"), href: "#about" },
+    { name: useTranslation("nav.career"), href: "#career" },
     { name: useTranslation("nav.services"), href: "#services" },
     { name: useTranslation("nav.projects"), href: "#work" },
     { name: useTranslation("nav.collaborative"), href: "#collaborative" },
@@ -60,23 +61,32 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
-        <Link href="#home" className="text-2xl font-bold text-white" onClick={(e) => scrollToSection(e, "#home")}>
-          Brian Boreiko<span className="text-blue-500">.</span>
-        </Link>
+        {/* Left section - Logo */}
+        <div className="flex-none">
+          <Link href="#home" className="text-2xl font-bold text-white" onClick={(e) => scrollToSection(e, "#home")}>
+            Brian Boreiko<span className="text-blue-500">.</span>
+          </Link>
+        </div>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-6 items-center">
-          {navItems.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className="text-gray-300 hover:text-white transition-colors duration-300 relative group"
-              onClick={(e) => scrollToSection(e, link.href)}
-            >
-              {link.name}
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-          ))}
+        {/* Middle section - Navigation links (desktop only) */}
+        <div className="hidden md:flex justify-center flex-1">
+          <div className="flex space-x-6">
+            {navItems.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="text-gray-300 hover:text-white transition-colors duration-300 relative group"
+                onClick={(e) => scrollToSection(e, link.href)}
+              >
+                {link.name}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Right section - Language selector and social links */}
+        <div className="hidden md:flex items-center space-x-4">
           <LanguageSelector />
           <motion.a
             href="https://calendly.com/boreikobrian/talkwithme"
@@ -119,42 +129,6 @@ export default function Navbar() {
         {/* Mobile Navigation Toggle */}
         <div className="md:hidden flex items-center space-x-4">
           <LanguageSelector />
-          <motion.a
-            href="https://calendly.com/boreikobrian/talkwithme"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-300 hover:text-white transition-colors duration-300"
-            aria-label="Schedule a meeting"
-            variants={iconVariants}
-            initial="initial"
-            whileHover="hover"
-          >
-            <Calendar size={24} />
-          </motion.a>
-          <motion.a
-            href="https://github.com/boreikobrian"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-300 hover:text-white transition-colors duration-300"
-            aria-label="GitHub"
-            variants={iconVariants}
-            initial="initial"
-            whileHover="hover"
-          >
-            <Github size={24} />
-          </motion.a>
-          <motion.a
-            href="https://linkedin.com/in/boreikobrian"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-300 hover:text-white transition-colors duration-300"
-            aria-label="LinkedIn"
-            variants={iconVariants}
-            initial="initial"
-            whileHover="hover"
-          >
-            <Linkedin size={24} />
-          </motion.a>
           <button className="text-white focus:outline-none" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -196,6 +170,37 @@ export default function Navbar() {
                   </Link>
                 </motion.div>
               ))}
+
+              {/* Mobile social links */}
+              <div className="flex justify-center space-x-6 mt-6">
+                <motion.a
+                  href="https://calendly.com/boreikobrian/talkwithme"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white transition-colors duration-300"
+                  aria-label="Schedule a meeting"
+                >
+                  <Calendar size={24} />
+                </motion.a>
+                <motion.a
+                  href="https://github.com/boreikobrian"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white transition-colors duration-300"
+                  aria-label="GitHub"
+                >
+                  <Github size={24} />
+                </motion.a>
+                <motion.a
+                  href="https://linkedin.com/in/brianboreiko"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white transition-colors duration-300"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin size={24} />
+                </motion.a>
+              </div>
             </motion.div>
           </motion.div>
         )}

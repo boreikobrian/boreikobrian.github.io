@@ -20,6 +20,7 @@ const defaultTranslations = {
     "nav.projects": "Proyectos",
     "nav.collaborative": "Colaboraciones",
     "nav.contact": "Contacto",
+    "nav.career": "Mi Camino",
 
     // Hero
     "hero.greeting": "¡Hola soy Brian Boreiko!",
@@ -122,6 +123,18 @@ const defaultTranslations = {
     // Buttons and common elements
     "button.code": "Código",
     "button.preview": "Vista previa",
+
+    // Career
+    "career.title": "Mi Camino Profesional",
+    "career.subtitle": "Un vistazo a mi trayectoria",
+    "career.position1.title": "Cloud Architect",
+    "career.position1.company": "Empresa A",
+    "career.position2.title": "DevOps Engineer",
+    "career.position2.company": "Empresa B",
+    "career.position3.title": "Senior Cloud Engineer",
+    "career.position3.company": "Empresa C",
+    "career.fulltime": "Tiempo completo",
+    "career.present": "Presente",
   },
   en: {
     // Navbar
@@ -131,6 +144,7 @@ const defaultTranslations = {
     "nav.projects": "Projects",
     "nav.collaborative": "Collaborations",
     "nav.contact": "Contact",
+    "nav.career": "My Path",
 
     // Hero
     "hero.greeting": "Hello, I'm Brian Boreiko!",
@@ -232,6 +246,18 @@ const defaultTranslations = {
     // Buttons and common elements
     "button.code": "Code",
     "button.preview": "Preview",
+
+    // Career
+    "career.title": "My Professional Path",
+    "career.subtitle": "A glimpse into my journey",
+    "career.position1.title": "Cloud Architect",
+    "career.position1.company": "Company A",
+    "career.position2.title": "DevOps Engineer",
+    "career.position2.company": "Company B",
+    "career.position3.title": "Senior Cloud Engineer",
+    "career.position3.company": "Company C",
+    "career.fulltime": "Full-time",
+    "career.present": "Present",
   },
   // Añadimos las traducciones en portugués
   pt: {
@@ -242,6 +268,7 @@ const defaultTranslations = {
     "nav.projects": "Projetos",
     "nav.collaborative": "Colaborações",
     "nav.contact": "Contato",
+    "nav.career": "Meu Caminho",
 
     // Hero
     "hero.greeting": "Olá, sou Brian Boreiko!",
@@ -344,6 +371,18 @@ const defaultTranslations = {
     // Buttons and common elements
     "button.code": "Código",
     "button.preview": "Visualizar",
+
+    // Career
+    "career.title": "Meu Caminho Profissional",
+    "career.subtitle": "Uma visão da minha trajetória",
+    "career.position1.title": "Arquiteto Cloud",
+    "career.position1.company": "Empresa A",
+    "career.position2.title": "Engenheiro DevOps",
+    "career.position2.company": "Empresa B",
+    "career.position3.title": "Engenheiro Cloud Sênior",
+    "career.position3.company": "Empresa C",
+    "career.fulltime": "Tempo integral",
+    "career.present": "Presente",
   },
 }
 

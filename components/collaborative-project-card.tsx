@@ -1,8 +1,6 @@
 "use client"
 
 import Image from "next/image"
-import { Github, ExternalLink } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import { useTranslation } from "@/context/language-context"
 
 interface TechBadgeProps {
@@ -115,32 +113,6 @@ export default function CollaborativeProjectCard({
         {technologies.map((tech, index) => (
           <TechBadge key={index} name={tech} color={getTechColor(tech)} />
         ))}
-      </div>
-
-      <div className="flex gap-2 mt-auto">
-        {repoUrl && (
-          <Button
-            variant="outline"
-            size="sm"
-            className="flex items-center gap-1 border-gray-700 hover:border-purple-500"
-            onClick={() => window.open(repoUrl, "_blank")}
-          >
-            <Github className="w-4 h-4" />
-            <span>{t("button.code")}</span>
-          </Button>
-        )}
-
-        {previewUrl && (
-          <Button
-            variant="outline"
-            size="sm"
-            className="flex items-center gap-1 border-gray-700 hover:border-purple-500"
-            onClick={() => window.open(previewUrl, "_blank")}
-          >
-            <ExternalLink className="w-4 h-4" />
-            <span>{t("button.preview")}</span>
-          </Button>
-        )}
       </div>
     </div>
   )

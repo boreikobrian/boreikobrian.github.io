@@ -28,6 +28,8 @@ import InteractiveShapes from "@/components/InteractiveShapes"
 import AnimatedBoxes from "@/components/AnimatedBoxes"
 import CollaborativeProjectCard from "@/components/collaborative-project-card"
 import { useTranslation } from "@/context/language-context"
+// First, import the CareerTimeline component at the top with the other imports
+import CareerTimeline from "@/components/career-timeline"
 
 export default function Home() {
   const [mounted, setMounted] = useState(false)
@@ -111,6 +113,28 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="py-20 bg-gradient-to-b from-[#01161E] to-[#022535]">
         <AboutMe />
+      </section>
+
+      {/* Career Path Section */}
+      <section id="career" className="py-20 bg-[#022535]">
+        <div className="container px-4 mx-auto">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">
+                {t("career.title")}
+              </span>
+              <span className="ml-2 text-white">🏔️</span>
+            </h2>
+            <p className="text-gray-400 text-center mb-12">{t("career.subtitle")}</p>
+
+            <CareerTimeline />
+          </motion.div>
+        </div>
       </section>
 
       {/* Services Section */}

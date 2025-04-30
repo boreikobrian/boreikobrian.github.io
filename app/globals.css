@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 252 100% 12.5%;
+    --foreground: 0 0% 98%;
+
+    --card: 252 100% 12.5%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 252 100% 12.5%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 252 100% 12.5%;
+
+    --secondary: 252 30% 20%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 252 30% 20%;
+    --muted-foreground: 252 5% 64.9%;
+
+    --accent: 252 30% 20%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 252 30% 20%;
+    --input: 252 30% 20%;
+    --ring: 252 4.9% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-color: #01161e; /* Azul más oscuro como fondo principal */
+  }
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #01161e; /* Actualizado a azul más oscuro */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #3b82f6, #06b6d4);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #2563eb, #0891b2);
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3b82f6 #01161e; /* Actualizado a azul más oscuro */
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: inset(50% 0 30% 0);
+    transform: translate(-5px, 0);
+  }
+  20% {
+    clip-path: inset(15% 0 65% 0);
+    transform: translate(5px, 0);
+  }
+  40% {
+    clip-path: inset(45% 0 40% 0);
+    transform: translate(-5px, 0);
+  }
+  60% {
+    clip-path: inset(25% 0 60% 0);
+    transform: translate(5px, 0);
+  }
+  80% {
+    clip-path: inset(55% 0 30% 0);
+    transform: translate(-5px, 0);
+  }
+  100% {
+    clip-path: inset(50% 0 30% 0);
+    transform: translate(0);
+  }
+}
+
+.glitch {
+  animation: glitch 1s infinite;
+  position: relative;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch::before {
+  left: 2px;
+  text-shadow: -2px 0 #3b82f6;
+  clip: rect(24px, 550px, 90px, 0);
+  animation: glitch-anim 2s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+  left: -2px;
+  text-shadow: -2px 0 #06b6d4;
+  clip: rect(85px, 550px, 140px, 0);
+  animation: glitch-anim 2s infinite linear alternate-reverse;
+}
